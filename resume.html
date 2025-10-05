@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Resume</title>
+    <style>
+      * {
+        background-color: cadetblue;
+      }
+      header {
+        text-align: center;
+      }
+      #navbar {
+        border-style: double;
+        border-width: 5px;
+        border-color: blue;
+        margin-bottom: 10px;
+      }
+      .link {
+        color: white;
+        font-size: large;
+        text-decoration: none;
+        margin: 5px 15px;
+      }
+      .profileImg {
+        border-style: solid;
+        border-width: 4px 2px;
+        border-color: rgb(35, 224, 35);
+        border-radius: 10px;
+      }
+      .myName {
+        font-family: cursive;
+        color: blue;
+        font-size: xx-large;
+      }
+      .intro {
+        color: black;
+        font-size: 18px;
+      }
+      .contact {
+        font-family: sans-serif;
+        border: 2px dotted yellow;
+        border-top: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+      }
+
+      .details {
+        background-color: black;
+        color: white;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 18px;
+      }
+      .education {
+        margin: 30px 15px;
+        text-align: center;
+      }
+      .education li {
+        list-style: none;
+      }
+      .skills {
+        outline: 7px solid blue;
+        padding: 30px 20px;
+        border-radius: 10px;
+      }
+      .skills ul li {
+        list-style: none;
+        margin: 10px;
+        padding: 5px 20px;
+        background-color: lightgray;
+        width: 30%;
+      }
+      .experience {
+        border-bottom: 5px solid blue;
+      }
+      .experience,
+      .certification {
+        margin: 30px 15px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .experience ul,
+      .certification ul {
+        list-style: none;
+      }
+      h2 {
+        text-decoration: underline;
+      }
+      .footer {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- image, name with short intro -->
+    <header>
+      <!-- navigation -->
+      <nav id="navbar">
+        <center>
+          <a class="link" href="day3-cssStyle.html">CV</a>
+          <a class="link" href="day2-Tables.html">Table Task</a>
+          <a class="link" href="forms.html">Form Task</a>
+        </center>
+      </nav>
+      <img
+        src="./assets/Profile Picture.png"
+        alt="his image"
+        height="200"
+        width="200"
+        class="profileImg"
+      />
+      <section>
+        <h1 class="myName">Ahmed Bilal</h1>
+        <p class="myName intro">
+          Computer Science graduate passionate about frontend development,
+          skilled in HTML, CSS, JavaScript, and React. Dedicated to building
+          responsive and user-friendly web applications
+        </p>
+        <details>
+          <summary class="details">Read More about Me:</summary>
+          <p>
+            I am Ahmed Bilal from Attock City. I have done my BCS from Comsats
+            University Attock Campus.
+          </p>
+        </details>
+      </section>
+    </header>
+
+    <hr />
+    <main>
+      <!-- contact Details in description list-->
+      <section class="contact">
+        <dl>
+          <dt><strong>Contact no:</strong></dt>
+          <dd><a href="tel:03135251927">03135251927</a></dd>
+          <dt><strong>Email:</strong></dt>
+          <dd>
+            <a href="mailto:ahmed258bilal@gmail.com" target="_blank"
+              >ahmed258bilal@gmail.com</a
+            >
+          </dd>
+          <dt><strong>LinkedIn:</strong></dt>
+          <dd>
+            <a
+              href="https://linkedin.com/in/ahmad-bilal-1872222b3"
+              target="_blank"
+              >www.linkedin.com/in/ahmad-bilal-1872222b3</a
+            >
+          </dd>
+          <dt>
+            <strong>GitHub:</strong>
+          </dt>
+          <dd>
+            <a href="https://github.com/ahmedbilal019" target="_blank"
+              >github.com/ahmedbilal019</a
+            >
+          </dd>
+        </dl>
+      </section>
+
+      <!-- education details -->
+      <section class="education">
+        <h2>Education:</h2>
+        <ul>
+          <li>
+            <b>BACHELOR IN COMPUTER SCIENCE</b> <br />
+            <p>
+              Comsats University Islamabad Attock Campus
+              <small><i>(2020-2024)</i></small>
+            </p>
+          </li>
+        </ul>
+      </section>
+      <!-- skills -->
+      <section class="skills">
+        <h2>Skills:</h2>
+        <ul type="circle">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavScript</li>
+        </ul>
+      </section>
+      <!-- Experience -->
+      <section class="experience">
+        <h2>Experience:</h2>
+        <ul>
+          <li>
+            <b>FRONTEND DEVELOPER INTERNSHIP</b>
+            <br />
+            <p>DevelopersHub Corporation</p>
+          </li>
+        </ul>
+      </section>
+      <!-- Certification -->
+      <aside class="certification">
+        <h2>Certifications:</h2>
+        <ul type="i">
+          <li>
+            <b>Responsive Web Design Certificate </b
+            ><small><i>(09-2024)</i></small>
+          </li>
+          <br />
+          <li>
+            <b>Front End Development Internship certificate</b
+            ><small><i>(10-2024)</i></small>
+          </li>
+        </ul>
+      </aside>
+    </main>
+    <hr />
+    <footer class="footer">
+      &copy; 2025 Ahmed Bilal. All rights reserved.
+    </footer>
+  </body>
+</html>
